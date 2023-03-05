@@ -1,208 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV - Proyecto final</title>
+    <title>Curriculum</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <script src="https://kit.fontawesome.com/2407102e0f.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div id="inicio">
+    <div class="inicio">
         <div class="foto-perfil">
-            <img src="" alt="Foto de perfil">
+            <img src="https://randomuser.me/api/portraits/men/29.jpg" alt="Foto de perfil">
         </div>
         <div class="navegacion">
-            <table>
-                <tbody>
-                    <tr class="nombre">
-                        <td colspan="2">
-                            <h1>Christophe Lenartsi</h1>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-address-book"></i>
-                            <a href="#perfil">Perfil</a>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-briefcase"></i>
-                            <a href="#experiencia">Experiencia</a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <i class="fa-solid fa-landmark"></i>
-                            <a href="#estudios">Estudios</a>
-                        </td>
-                        <td>
-                            <i class="fa-solid fa-chart-simple"></i>
-                            <a href="#habilidades">Habilidades</a>
-                        </td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-    <hr class="divisor">
-    <div id="perfil">
-        <h1 class="titulo">Perfil</h1>
-        <p>Ac tincidunt vitae semper quis lectus nulla at volutpat. Nunc mi ipsum faucibus vitae. Eleifend mi
-            in nulla posuere sollicitudin aliquam ultrices. Auctor augue mauris augue neque gravida. Sed sed
-            risus pretium quam vulputate dignissim. In egestas erat imperdiet sed euismod nisi. Vitae auctor
-            eu augue ut.</p>
-        <p>Cursus turpis massa tincidunt dui ut ornare. Adipiscing bibendum est ultricies integer. Enim sit
-            amet venenatis urna. Interdum varius sit amet mattis vulputate. Tellus mauris a diam maecenas sed
-            enim. Vulputate dignissim suspendisse in est ante in nibh. Et netus et malesuada fames ac turpis.
-            Lorem dolor sed viverra ipsum nunc aliquet.</p>
-        <div class="datos-contacto">
-            <div class="contenedor-datos">
-                <div class="datos">
-                    <p>Datos de contacto</p>
+            <div class="nombre">
+                <h1>Christophe Lenartsi</h1>
+            </div>
+            <div>
+                <div class="boton">
+                    <i class="fa-solid fa-user"></i>
+                    <a href="#perfil">Perfil</a>
                 </div>
-                <div class="datos-ocultos">
-                    <table>
-                        <tbody>
-                            <tr>
-                                <td><p>Direccion</p></td>
-                                <td><p>E-mail</p></td>
-                                <td><p>Codigo postal</p></td>
-                                <td><p>Telefono</p></td>
-                            </tr>
-                            <tr>
-                                <td><p>mza 23</p></td>
-                                <td><p>@gmail.com</p></td>
-                                <td><p>CB1853A</p></td>
-                                <td><p>1234567890</p></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="boton">
+                    <i class="fa-solid fa-landmark"></i>
+                    <a href="#estudios">Datos académicos</a>
+                </div>
+                <div class="boton">
+                    <i class="fa-solid fa-briefcase"></i>
+                    <a href="#experiencia">Experiencia laboral</a>
+                </div>
+                <div class="boton">
+                    <i class="fa-solid fa-comments"></i>
+                    <a href="#formulario">Contacto</a>
                 </div>
             </div>
         </div>
     </div>
-    <hr class="divisor">
-    <div id="estudios">
-        <h1 class="titulo">Estudios</h1>
-        <table>
-            <tbody>
-                <tr>
-                    <td class="img-contenido">
-                        <img src="" alt="">
-                    </td>
-                    <td class="contenido">
-                        <div>
-                            <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
-                            <p>Metus dictum at tempor commodo ullamcorper a. Cum sociis natoque penatibus et magnis dis
-                            parturient montes risus rhonques.</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="img-contenido">
-                        <img src="" alt="">
-                    </td>
-                    <td class="contenido">
-                        <div>
-                            <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
-                            <p>At quis risus sed vulputate odio ut enim. Pharetra magna ac placerat vestibulum lectus mauris.
-                            Tempus quam pellentesque nec nam.</p>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="img-contenido">
-                        <img src="" alt="">
-                    </td>
-                    <td class="contenido">
-                        <div>
-                            <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
-                            <p>Et malesuada fames ac turpis egestas. Turpis egestas maecenas pharetra convallis posuere morbi.
-                            Vulputate eu scelerisque felis imperdiet.</p>
-                        </div>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="perfil" id="perfil">
+        <div class="contenido-perfil">
+            <h1>Perfil</h1>
+            <p>Ac tincidunt vitae semper quis lectus nulla at volutpat. Nunc mi ipsum faucibus vitae. Eleifend mi
+                in nulla posuere sollicitudin aliquam ultrices. Auctor augue mauris augue neque gravida. Sed sed
+                risus pretium quam vulputate dignissim. In egestas erat imperdiet sed euismod nisi. Vitae auctor
+                eu augue ut.</p>
+            <p>Cursus turpis massa tincidunt dui ut ornare. Adipiscing bibendum est ultricies integer. Enim sit
+                amet venenatis urna. Interdum varius sit amet mattis vulputate. Tellus mauris a diam maecenas sed
+                enim. Vulputate dignissim suspendisse in est ante in nibh. Et netus et malesuada fames ac turpis.
+                Lorem dolor sed viverra ipsum nunc aliquet.</p>
+        </div>
+        <div class="caja-datos">
+            <div class="caja-interior">
+              <div class="frente">
+                <h2>Datos personales</h2>
+              </div>
+              <div class="atras">
+                <p>Dirección: Calle 1234, Buenos Aires</p>
+                <p>Teléfono: 12 3456-7890</p>
+                <p>E-mail: lenartsi.christophe@example.com</p>
+              </div>
+            </div>
+        </div>
     </div>
-    <hr class="divisor">
-    <div id="habilidades">
-        <h1 class="titulo">Habilidades</h1>
-        <table class="tabla-habilidades">
-            <tbody>
-                <tr>
-                    <td>
-                        <h5>Photoshop</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                                <hr class="divisor">
-                        <h5>InDesign</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                                <hr class="divisor">
-                        <h5>Francés</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                    </td>
-                    <td>
-                        <h5>Google Ads</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span>
-                                <hr class="divisor">
-                        <h5>Ruby on rails</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                                <hr class="divisor">
-                        <h5>Inglés</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                    </td>
-                    <td>
-                        <h5>PHP/MySQL</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star"></span>
-                                <hr class="divisor">
-                        <h5>MS Office</h5>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                            <span class="fa fa-star ok"></span>
-                                <hr class="divisor">
-                        <h5>Chino Mandarín</h5>
-                        <span class="fa fa-star ok"></span>
-                        <span class="fa fa-star ok"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                        <span class="fa fa-star"></span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="estudios" id="estudios">
+        <div class="contenido-estudios">
+            <h1>Datos académicos</h1>
+            <div>
+                <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
+                <p>Metus dictum at tempor commodo ullamcorper a. Cum sociis natoque penatibus et magnis dis
+                parturient montes risus rhonques.</p>
+            </div>
+            <div>
+                <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
+                <p>At quis risus sed vulputate odio ut enim. Pharetra magna ac placerat vestibulum lectus mauris.
+                Tempus quam pellentesque nec nam.</p>
+            </div>
+            <div>
+                <h3>2012 - TÍTULO - CENTRO EDUCATIVO</h3>
+                <p>Et malesuada fames ac turpis egestas. Turpis egestas maecenas pharetra convallis posuere morbi.
+                Vulputate eu scelerisque felis imperdiet.</p>
+            </div>
+        </div>
+        <div class="habilidades">
+            <h1>Habilidades</h1>
+            <div class="contenido-habilidades">
+                <h3>Photoshop</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                <h3>InDesign</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                <h3>Google Ads</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                <h3>Ruby on rails</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                    <i class="fa-solid fa-circle no"></i>
+            </div>
+            <div class="contenido-habilidades">
+                <h3>PHP/MySQL</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                <h3>MS Office</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                <h3>Inglés</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                <h3>Francés</h3>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle ok"></i>
+                    <i class="fa-solid fa-circle no"></i>
+                    <i class="fa-solid fa-circle no"></i>
+            </div>
+        </div>
     </div>
-    <hr class="divisor">
-    <div id="experiencia">
-        <h1 class="titulo">Experiencia laboral</h1>
+    <div class="experiencia" id="experiencia">
+        <h1>Experiencia laboral</h1>
         <div class="contenedor-diapositiva">
             <div class="diapositiva">
                 <h3>2010-2014 | PUESTO | EMPRESA</h3>
@@ -243,4 +180,23 @@
         </div>
         <script src="myScript.js"></script>
     </div>
+    <div id="formulario">
+        <div>
+            <h1>Deja un mensaje y contactaré contigo</h1>
+        </div>
+        <div class="caja-formulario">
+        <form action="action_page.php" method="post">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email">      
+            <label for="asunto">Asunto</label>
+            <textarea id="asunto" name="asunto" style="height:150px"></textarea>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
 </body>
+</html>

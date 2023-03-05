@@ -1,4 +1,4 @@
-#inicio {
+.inicio {
     width: 100%;
     height: 600px;
     box-sizing: content-box;
@@ -27,142 +27,181 @@
     text-align: left;
 }
 
-.navegacion table {
-    width: 100%;
-    height: 250px;
-    font-size: x-large;
+.nombre {
     text-align: center;
+    padding: 5%;
+    letter-spacing: 2px;
 }
 
-.navegacion table a {
+.boton {
+    width: 25%;
+    text-align: center;
+    float: left;
+}
+
+.boton a {
     color: #000000;
     padding: 10px 15px;
     border-radius: 10px;
+    font-size: large;
 }
 
-.navegacion table a:link {
+.boton a:link {
     text-decoration: none;
 }
 
-.navegacion table a:visited {
+.boton a:visited {
     text-decoration: none;
 }
 
-.navegacion table a:hover {
+.boton a:hover {
     text-decoration: none;
-    background-color: #9caf8b;
+    background-color: #717171;
+    color: white;
 }
 
-.navegacion table a:active {
+.boton a:active {
     text-decoration: none;
 }
 
-.nombre {
-    height: 60%;
-    text-indent: 50px;
-    letter-spacing: 3px;
-}
-
-.divisor {
-    margin-top: 5%;
-    border: none;
-}
-
-.titulo {
-    text-indent: 50px;
-    letter-spacing: 3px;
-}
-
-#perfil p {
-    font-size: x-large;
-}
-
-.datos-contacto {
+.perfil {
     width: 100%;
-    box-sizing: content-box;
     margin: auto;
+    box-sizing: content-box;
+    margin-top: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.contenedor-datos {
-    width: 100%;
+.contenido-perfil {
+    width: 75%;
+    float: left;
+}
+
+.contenido-perfil h1 {
     text-align: center;
 }
 
-.datos {
-    width: 50%;
-    text-align: center;
-    border-radius: 15px;
-    margin: auto;
-    background-color: #9caf8b;
-}
-
-.datos-ocultos {
-    display: none;
-    width: 100%;
-}
-
-.datos-ocultos table {
-    width: 100%;
-    margin: auto;
-    text-align: center;
-}
-      
-.datos:hover + .datos-ocultos {
-    display: block;
-}
-
-.img-contenido {
-    width: 20%;
-    text-align: center;
-    vertical-align: middle;
-}
-
-.img-contenido img {
-    width: 80%;
-    display: block;
-    margin: auto;
-    border-radius: 50%;
-}
-
-.contenido {
-    width: 80%;
-    margin: auto;
-}
-
-.contenido div {
-    padding: 5px;
-}
-
-.contenido h3 {
-    letter-spacing: 2px;
-    font-size: x-large;
-}
-
-.contenido p {
-    letter-spacing: 2px;
-    font-size: x-large;
+.contenido-perfil p {
     text-align: justify;
     margin: auto;
-}
-
-.tabla-habilidades {
-    width: 100%;
-    text-align: center;
-    margin: auto;
-}
-
-.tabla-habilidades h5 {
-    text-align: center;
-    font-size: x-large;
     letter-spacing: 2px;
+    font-size: x-large;
+    width: 95%;
+    margin-bottom: 2%;
+}
+
+.caja-datos {
+    background-color: transparent;
+    width: 25%;
+    height: 200px;
+}
+
+.caja-interior {
+   position: relative;
+   width: 100%;
+   height: 100%;
+   text-align: center;
+   transition: transform 0.8s;
+   transform-style: preserve-3d;
+}
+
+.caja-datos:hover .caja-interior {
+   transform: rotateY(180deg);
+}
+  
+.frente, .atras {
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   backface-visibility: hidden;
+   border-radius: 15px;
+}
+
+.frente {
+   background-color: #f2f2f2;
+   color: black;
+}
+  
+.atras {
+   background-color: #717171;
+   color: white;
+   transform: rotateY(180deg);
+}
+
+.atras p {
+    font-size: large;
+}
+
+.estudios {
+    width: 100%;
     margin: auto;
+    box-sizing: content-box;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido-estudios {
+    width: 60%;
+    float: left;
+}
+
+.contenido-estudios h1 {
+    text-align: center;
+}
+
+.contenido-estudios h3 {
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    font-size: large;
+    text-align: center;
+}
+
+.contenido-estudios p {
+    text-align: justify;
+    margin: auto;
+    letter-spacing: 2px;
+    font-size: x-large;
+    width: 80%;
+}
+
+.habilidades {
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+
+.contenido-habilidades {
+    width: 50%;
+    float: left;
+    text-align: center;
+}
+
+.contenido-habilidades h3 {
+    letter-spacing: 2px;
+    font-size: large;
 }
 
 .ok {
-    color: orange;
+    color: #717171;
+}
+
+.no {
+    color: #bbb;
+}
+
+.experiencia {
+    width: 100%;
+    margin: auto;
+    box-sizing: content-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
 }
 
 .contenedor-diapositiva {
@@ -233,4 +272,54 @@
   
 .active, .puntero:hover {
     background-color: #717171;
+}
+
+#formulario {
+    width: 100%;
+    margin: auto;
+    box-sizing: content-box;
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 5%;
+}
+
+input[type=text], input[type=email], select, textarea {
+    width: 100%;
+    padding: 12px; 
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+input[type=submit] {
+    background-color: #717171;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #bbb;
+    color:#000000;
+}
+
+.caja-formulario {
+    border-radius: 15px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 40%;
+    margin-top: 2%;
+    
+}
+
+.caja-formulario label {
+    font-size: large;
 }
