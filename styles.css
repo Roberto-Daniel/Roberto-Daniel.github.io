@@ -9,6 +9,7 @@
     body {
         background-color: #ffff99;
         margin: 0;
+        font-family: 'Merriweather', serif;
         word-wrap: break-word;
     }
 
@@ -241,6 +242,7 @@
     body {
         background-color: #ffff99;
         margin: 0;
+        font-family: 'Merriweather', serif;
     }
 
     /* Menú */
@@ -479,6 +481,7 @@
     body {
         background-color: #ffff99;
         margin: 0;
+        font-family: 'Merriweather', serif;
     }
 
     /* Menú */
